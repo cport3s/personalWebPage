@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.personal_information {
+    flex: 1;
+    background-color: rgb(0, 4, 58);
+}
+
+.work_experience {
+    flex: 2;
+    background-color: rgb(0, 2, 128);
+}
+
+.education {
+    flex: 3;
+    background-color: blue;
+}
+
+.skills {
+    flex: 5;
+    background-color: rgb(79, 79, 121);
+}
