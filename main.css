@@ -1,26 +1,33 @@
+@keyframes fadeInAnimation {
+    from {opacity: 0;}
+    to {opacity: 100;}
+}
+
 body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     color: white;
+    font-family: 'Alata', sans-serif;
+    font-size: 18px;
 }
 
 .personal_information {
     flex: 1;
-    background-color: rgb(0, 4, 58);
+    background-color: rgb(150, 185, 226);
 }
 
 .work_experience {
     flex: 2;
-    background-color: rgb(0, 2, 128);
+    background-color: rgb(107, 162, 224);
 }
 
 .education {
     flex: 3;
-    background-color: blue;
+    background-color: rgb(150, 185, 226);
 }
 
 .skills {
     flex: 5;
-    background-color: rgb(79, 79, 121);
+    background-color: rgb(107, 162, 224);
 }
