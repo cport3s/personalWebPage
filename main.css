@@ -3,8 +3,13 @@
     to {opacity: 100;}
 }
 
+@keyframes expandAnimation {
+    from {height: 40px;}
+    to {height: auto;}
+}
+
 body {
-    display: flex;
+    display: block;
     flex-direction: column;
     flex-wrap: wrap;
     color: white;
@@ -13,6 +18,7 @@ body {
 }
 
 .personal_information {
+    overflow: hidden;
     flex: 1;
     background-color: rgb(150, 185, 226);
 }
