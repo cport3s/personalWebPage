@@ -28,33 +28,25 @@ body {
 
 .personal_information {
     display: none;
-    flex: 2;
     background-color: rgb(150, 185, 226);
-}
-
-.showButton {
-    flex: 1;
 }
 
 .showButton button {
     width: 100%;
-    height: 50px;
+    height: 40px;
 }
 
 .work_experience {
     display: none;
-    flex: 3;
     background-color: rgb(107, 162, 224);
 }
 
 .education {
     display: none;
-    flex: 4;
     background-color: rgb(150, 185, 226);
 }
 
 .skills {
     display: none;
-    flex: 5;
     background-color: rgb(107, 162, 224);
 }
