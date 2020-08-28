@@ -7,6 +7,11 @@ function fadeInBody() {
     /*personalInformation[0].style.animationDuration = '1s';*/
 }
 
-function showPersonalInfoBox() {
-    
+function showInfoBox(classToToggle) {
+    var personalInformation = document.getElementsByClassName(classToToggle);
+    if (personalInformation[0].style.display == 'none') {
+        personalInformation[0].style.display = 'inline';
+    } else {
+        personalInformation[0].style.display = 'none';
+    }
 }

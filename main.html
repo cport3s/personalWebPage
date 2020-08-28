@@ -6,7 +6,7 @@
     </head>
     <body onload="fadeInBody()">
         <section class="showButton">
-            <button type="button" onclick="showPersonalInfoBox()">Personal Information</button>
+            <button type="button" onclick="showInfoBox('personal_information')">Personal Information</button>
         </section>
         <section class="personal_information">
             <h1>Personal Information</h1>
@@ -20,6 +20,9 @@
                 GitHub: <a href="https://github.com/cport3s">cport3s</a><br>
                 LinkedIn: <a href="https://www.linkedin.com/in/cportes/">cportes</a><br>
             </p>
+        </section>
+        <section class="showButton">
+            <button type="button" onclick="showInfoBox('work_experience')">Work Experience</button>
         </section>
         <section class="work_experience">
             <h1>Work Experience</h1>
@@ -169,6 +172,9 @@
                 </li>
             </ul>
         </section>
+        <section class="showButton">
+            <button type="button" onclick="showInfoBox('education')">Education</button>
+        </section>
         <section class="education">
             <h1>Education</h1>
             <p>
@@ -187,6 +193,9 @@
                     <br>
                 </ul>
             </p>
+        </section>
+        <section class="showButton">
+            <button type="button" onclick="showInfoBox('skills')">Skills</button>
         </section>
         <section class="skills">
             <h1>Skills</h1>

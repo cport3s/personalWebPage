@@ -27,7 +27,7 @@ body {
 }
 
 .personal_information {
-    display: inline;
+    display: none;
     flex: 2;
     background-color: rgb(150, 185, 226);
 }
@@ -42,16 +42,19 @@ body {
 }
 
 .work_experience {
+    display: none;
     flex: 3;
     background-color: rgb(107, 162, 224);
 }
 
 .education {
+    display: none;
     flex: 4;
     background-color: rgb(150, 185, 226);
 }
 
 .skills {
+    display: none;
     flex: 5;
     background-color: rgb(107, 162, 224);
 }
