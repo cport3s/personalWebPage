@@ -27,8 +27,13 @@ body {
 }
 
 .personal_information {
-    display: none;
+    display: inline;
     background-color: rgb(150, 185, 226);
+}
+
+.personal_information iframe {
+    width: 100%;
+    height: 300px;
 }
 
 .showButton button {
