@@ -8,7 +8,6 @@ body {
     flex-direction: column;
     color: white;
     font-family: 'Alata', sans-serif;
-    font-size: 18px;
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
@@ -20,6 +19,7 @@ body {
     padding-left: 1%;
     padding-right: 1%;
     width: 96%;
+    font-size: 18px;
 }
 
 .personal_information {
@@ -56,4 +56,16 @@ body {
 .skills {
     display: none;
     background-color: rgb(107, 162, 224);
+}
+
+
+@media (orientation: portrait) {
+    .showButton button {
+        height: 120px;
+        font-size: 34px;
+    }
+
+    .content {
+        font-size: 24px;
+    }
 }
