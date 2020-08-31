@@ -19,7 +19,7 @@ body {
 .content {
     padding-left: 1%;
     padding-right: 1%;
-    width: 95%;
+    width: 96%;
 }
 
 .personal_information {
@@ -30,6 +30,7 @@ body {
 .personal_information iframe {
     width: 100%;
     height: 300px;
+    border-radius: 6px 6px 6px 6px;
 }
 
 .showButton {
