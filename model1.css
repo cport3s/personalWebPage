@@ -4,15 +4,30 @@
 }
 
 body {
+    background-color: rgb(0, 103, 151);
+}
+
+header {
+    position: sticky;
+    overflow: hidden;
+    z-index: 2;
+    background-color: black;
+    height: auto;
+    margin-top: 0px;
+    text-align: center;
+}
+
+header div {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    color: white;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+
+#contentBody {
+    display: inline;
     font-family: 'Alata', sans-serif;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    background-color: rgb(0, 103, 151);
 }
 
 .content {
@@ -22,9 +37,7 @@ body {
 }
 
 .personal_information {
-    order: 1;
-    background-color: rgb(150, 185, 226);
-    flex-basis: auto;
+    display: inline;
 }
 
 .personal_information iframe {
@@ -34,32 +47,18 @@ body {
 }
 
 .work_experience {
-    order: 4;
-    background-color: rgb(107, 162, 224);
-    flex-basis: auto;
+    display: none;
 }
 
 .education {
-    order: 2;
-    background-color: rgb(150, 185, 226);
-    flex-basis: auto;
+    display: none;
 }
 
 .skills {
-    order: 3;
-    background-color: rgb(107, 162, 224);
-    flex-basis: auto;
+    display: none;
 }
-.bottomMenu {
-    order: 5;
-}
-@media (orientation: portrait) {
-    .showButton button {
-        height: 120px;
-        font-size: 34px;
-    }
 
-    .content {
-        font-size: 24px;
-    }
+.bottomMenu {
+    display: none;
 }
+
