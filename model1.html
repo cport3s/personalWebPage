@@ -1,228 +1,224 @@
 <!DOCTYPE html5>
 <html>
     <head>
-        <link rel="stylesheet" href="model1.css"/>
-        <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@500&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main.css"/>
         <script src="main.js"></script>
     </head>
     <body onload="fadeInBody()">
-        <header>
-            <div>
-                <button class="navBarButton" type="button" onclick="showInfoBox('personal_information')">About</button>
-                <button class="navBarButton" type="button" onclick="showInfoBox('work_experience')">Experience</button>
-                <button class="navBarButton" type="button" onclick="showInfoBox('education')">Education</button>
-                <button class="navBarButton" type="button" onclick="showInfoBox('skills')">Skills</button>
-                <button class="navBarButton" type="button" onclick="showInfoBox('portfolio')">Portfolio</button>
-            </div>
-        </header>
-        <section id="contentBody">
-            <section class="content personal_information">
-                <article>
-                    <div>
-                        <img src="./static/img/profilePic.jpg" alt="profilePic" style="height: 150px; width: 150px;">
-                        <p>
-                            Carlos Alfredo Portes Corporan<br>
-                            <img src="./static/icons/location_512x512.png" alt="" style="height: 20px; width: 20px;">: Santo Domingo, Dominican Republic<br>
-                            <p>Self-taught developer, working as a Telecom Engineer with a passion for animations and automation.</p>
-                            <a href="mailto:carlosportes.c@gmail.com"><img src="./static/icons/gmail_512x512.png" alt="" style="height: 20px; width: 20px;"></a>
-                            <a href="https://t.me/cport3s"><img src="./static/icons/telegram_512x512.png" alt="" style="height: 20px; width: 20px;"></a>
-                            <a href="https://twitter.com/cport3s"><img src="./static/icons/twitter_512x512.png" alt="" style="height: 20px; width: 20px;"></a>
-                            <a href="https://github.com/cport3s"><img src="./static/icons/github_480x480.png" alt="" style="height: 20px; width: 20px;"></a>
-                            <a href="https://www.linkedin.com/in/cportes/"><img src="./static/icons/linkedin_512x512.png" alt="" style="height: 20px; width: 20px;"></a><br>
-                        </p>
-                    </div>
-                    <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15137.24223897101!2d-69.9501223164778!3d18.469586800001714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDI4JzEwLjUiTiA2OcKwNTYnMjkuMCJX!5e0!3m2!1sen!2sdo!4v1598700152599!5m2!1sen!2sdo" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe><br>
-                    </div>
-                </article>
-            </section>
-            <section class="content work_experience">
-                <h1>Work Experience</h1>
+        <section class="showButton">
+            <button type="button" onclick="showInfoBox('personal_information')">Personal Information</button>
+        </section>
+        <section class="content personal_information">
+            <h1>Personal Information</h1>
+            <img src="./static/img/profilePic.jpg" alt="profilePic" style="height: 150px; width: 150px;">
+            <p>
+                Name: Carlos Alfredo Portes Corporan<br>
+                Location: Santo Domingo, Dominican Republic<br>
+            </p>
+            <h3>Contact Information</h3>
+            <p>
+                E-Mail: carlosportes.c@gmail.com<br>
+                Telegram: <a href="https://t.me/cport3s">cport3s</a><br>
+                Twitter: <a href="https://twitter.com/cport3s">cport3s</a><br>
+                GitHub: <a href="https://github.com/cport3s">cport3s</a><br>
+                LinkedIn: <a href="https://www.linkedin.com/in/cportes/">cportes</a><br>
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15137.24223897101!2d-69.9501223164778!3d18.469586800001714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDI4JzEwLjUiTiA2OcKwNTYnMjkuMCJX!5e0!3m2!1sen!2sdo!4v1598700152599!5m2!1sen!2sdo" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+        <section class="showButton">
+            <button type="button" onclick="showInfoBox('work_experience')">Work Experience</button>
+        </section>
+        <section class="content work_experience">
+            <h1>Work Experience</h1>
+            <ul>
+                <li>
+                    <p>
+                        <strong>Employer: </strong>Altice Hispaniola<br>
+                        <strong>Job Title: </strong>Senior RAN Engineer<br>
+                        <strong>Duration: </strong>June 2019 - Current<br>
+                        <strong>Job Description: </strong>Part of the implementations & operations team on the wireless network’s access section. The team is responsible for the following network element’s maintenance routine, RFPs & RFCs: eGBTS, NodeB, eNodeB, gNodeB, BSC, RNC & PTP Servers.<br>
+                        <strong>Duties: </strong>
+                        <ul>
+                            <li>eGBTS/NodeB/eNodeB/gNodeB site deployment, RAT expansion and sector expansion</li>
+                            <li>Field Technician support for implementations and maintenance routines (Battery bank capacity calculations, PSU calculation according to site DC load and external cabinet daisy chain configuration via RS484 serial port)</li>
+                            <li>BSC/RNC interface & CPU resources implementation and maintenance routine (ABIS interface load balancing, according to TRX report and new A & Gb interface integration according to utilization reports)</li>
+                            <li>PTP Server implementation, interface implementation and maintenance routine</li>
+                            <li>Develop & maintain Network Dashboard web app</li>
+                        </ul>
+                        <br>
+                        <strong>Achievements: </strong>
+                        <ul>
+                            <li>NE Name & Type Network Standardization</li>
+                            <li>Successful CS Core Network Migration on RAN Side without Incidents</li>
+                            <li>Cell Site Sector Split Time Improvement from 2hrs to 15mins</li>
+                            <li>eGBTS Rehoming Time Improvement from 1hr to 5mins</li>
+                            <li>Successfully integrate new PTP servers on network and deploy IP Clock Links standardization parameters on the whole network</li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <strong>Employer: </strong>Pontificia Universidad Catolica Madre & Maestra (PUCMM)<br>
+                        <strong>Job Title: </strong>Adjunct Professor<br>
+                        <strong>Duration: </strong>January-2019 – Current <br>
+                        <strong>Job Description: </strong>Adjunct Professor for the telematics engineering school, Telecom Division.<br>
+                        <strong>Duties: </strong>
+                        <ul>
+                            <li>Teach the Telecom Network Architecture subject [ITT-435] and Wireless Access subject [ITT-546]</li>
+                            <li>Periodic updates on the Telecom Network Architecture and Wireless Access subject’s programs</li>
+                            <li>Periodic updates on the School’s program for the Telematics Engineering career</li>
+                        </ul>
+                        <br>
+                        <strong>Achievements: </strong>
+                        <ul>
+                            <li>Update Telecom Network Architecture Subject Program with the Following topics: GSM, UMTS, LTE & NR Network Architecture, IMS on Fixed Networks and FTTH, FTTx & WTTx</li>
+                            <li>Request & Receive Telecom Equipment as donations from multiple local Telecom Companies to be installed on College’s Laboratories</li>
+                            <li>Successfully adapt to imparting classes online</li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <strong>Employer: </strong>ManPower Dominicana<br>
+                        <strong>Job Title: </strong>Wireless Engineer<br>
+                        <strong>Duration: </strong>August-2016 – June 2019<br>
+                        <strong>Job Description: </strong>Customer engineering support for Huawei Technologies on RAN Swap out and Network Babysitting projects for the 2 biggest mobile service providers on the Dominican Republic.<br>
+                        <strong>Duties: </strong>
+                        <ul>
+                            <li>Single RAN eGBTS/NodeB/eNodeB swap out (from Ericsson BTS, NodeB and Nokia eNodeB to Huawei SingleRAN MBTS)</li>
+                            <li>BSC/RNC network element design & integration (according to customer’s current traffic trends)</li>
+                            <li>Customer’s network babysitting</li>
+                            <li>Customer’s technical training (including field operations engineers, Tier I, II & III operations engineers and integrations and implementation engineers)</li>
+                            <li>Oversee WTTx Project Network Rollout</li>
+                            <li>WTTx Cell Integration</li>
+                            <li>Pico/Macro BTS Integration</li>
+                        </ul>
+                        <br>
+                        <strong>Achievements: </strong>
+                        <ul>
+                            <li>New GUL Site & LTE Sector Expansion Deployment Tool Development on Python and VBA, improving new MBTS integration time from 1hr to 30mins</li>
+                            <li>DHCP Relay deployment on Customer’s network, to reduce site integration cost and simplify delivery process</li>
+                            <li>Parameter standardization on customer’s network to simplify troubleshooting</li>
+                            <li>VoLTE Project support on RAN Side</li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <strong>Employer: </strong>Orange Dominicana<br>
+                        <strong>Job Title: </strong>Junior Microwave Transmission Engineer<br>
+                        <strong>Duration: </strong>December 2014 – August 2016<br>
+                        <strong>Job Description: </strong>Part of the Wireless Transport Engineering Team, responsible for the transport layer on new sites, part of the network rollout projects, B2B Customer’s tailor-made solutions for transmission, microwave and optic fiber link dimensioning and maintenance.<br>
+                        <strong>Duties: </strong>
+                        <ul>
+                            <li>Network Rollout Project support (microwave link design, according to the ABIS/IuB/S1 throughput requirements)</li>
+                            <li>Support the field operations engineers on their integration & maintenance tasks</li>
+                            <li>Oversee Microwave Link utilization and coordinate expansion jobs accordingly, to maintain link utilization below 70%</li>
+                        </ul>
+                        <br>
+                        <strong>Achievements: </strong>
+                        <ul>
+                            <li>Maintaining link utilization below 70% on the Eastern Region of the country</li>
+                            <li>Network Rollout microwave link installation according to plan [90% of the cases]</li>
+                            <li>New commissioning tool implementation for Huawei RTN Microwave Links (CLI Interface)</li>
+                            <li>Fixing & maintaining O&M Network for various NEs on Northern and Southern regions of the country (Ericsson Minilink, Huawei RTN910, RTN950 & RTN980, Eclipse/Aviat INU & INUe)</li>
+                        </ul>
+                        <br>
+                        <strong>Job Title: </strong>NOC Tier I Junior Engineer<br>
+                        <strong>Duration: </strong>June 2014 – December 2014<br>
+                        <strong>Job Description: </strong>Part of the Network Operation Center team, responsible for overseeing network alarms & performance, Site access and Field technician support.<br>
+                        <strong>Duties: </strong>
+                        <ul>
+                            <li>Support field technicians on their maintenance routines on Ericsson 2106, 2101 & 2111 GBTS, Huawei NodeB & eNodeB, Ericsson Minilink, Aviat INU & INUe and Huawei RTN microwave links</li>
+                            <li>Receive and process external and internal alarms and assign trouble tickets accordingly</li>
+                        </ul>
+                        <br>
+                        <strong>Job Title: </strong>Tier III Customer Service Support Junior Engineer<br>
+                        <strong>Duration: </strong>June 2012 – June 2014<br>
+                        <strong>Job Description: </strong>Work as part of the team responsible for acting as a bridge between the Customer Service Directive and the Network O&M Directive, to analyze, escalate and follow up on trouble tickets escalated from Tier II in the Customer Service Directive. Support on Major network incidents, by confirming the case has effectively been solved with B2C and B2B customers.<br>
+                        <strong>Duties: </strong>
+                        <ul>
+                            <li>Signaling analysis throughout the network (using Astellia and Tekelek STP)</li>
+                            <li>RAN KPI analysis (On Huawei mAOS & Ericsson OSS) and Trouble Tickets correlation</li>
+                            <li>Customer site visit for a closer follow up [B2B cases only]</li>
+                        </ul>
+                        <br>
+                        <strong>Achievements: </strong>
+                        <ul>
+                            <li>Tier II department technical training on RAN KPI analysis to reduce Trouble Tickets escalation</li>
+                            <li>Field technicians technical training on Huawei BTS3900 NodeB IP transport troubleshooting</li>
+                            <li>Development of the Microwave Link network topology Google Earth layer</li>
+                            <li>Analysis on a Data Consumption bug on Volubill VAS platform</li>
+                        </ul>
+                        <br>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <strong>Employer: </strong>ManPower Dominicana<br>
+                        <strong>Job Title: </strong>Site Engineer<br>
+                        <strong>Duration: </strong>March-2011 – July 2012<br>
+                        <strong>Job Description: </strong>Support for customer Huawei Dominicana on UMTS Network Rollout project for one of the biggest mobile service providers on the Dominican Republic. Act as an OnSite Integration Engineer for NodeBs and Site support during warranty after integration.<br>
+                        <strong>Duties: </strong>
+                        <ul>
+                            <li>On site NodeB BTS3900 commissioning and integration</li>
+                            <li>Subcontractor task coordination (Warehouse pickup, site adaptation and installation)</li>
+                            <li>Project planning and reporting</li>
+                            <li>Channel Element expansions</li>
+                        </ul>
+                        <br>
+                        <strong>Achievements: </strong>
+                        <ul>
+                            <li>NodeB BTS3900 integration script development through MML Command & CME Tool</li>
+                            <li>Successfully complete 2011-Q3, 2011-Q4, 2012-Q1 and 2012-Q2 project tasks according to plan</li>
+                        </ul>
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section class="showButton">
+            <button type="button" onclick="showInfoBox('education')">Education</button>
+        </section>
+        <section class="content education">
+            <h1>Education</h1>
+            <p>
                 <ul>
                     <li>
-                        <p>
-                            <strong>Employer: </strong>Altice Hispaniola<br>
-                            <strong>Job Title: </strong>Senior RAN Engineer<br>
-                            <strong>Duration: </strong>June 2019 - Current<br>
-                            <strong>Job Description: </strong>Part of the implementations & operations team on the wireless network’s access section. The team is responsible for the following network element’s maintenance routine, RFPs & RFCs: eGBTS, NodeB, eNodeB, gNodeB, BSC, RNC & PTP Servers.<br>
-                            <strong>Duties: </strong>
-                            <ul>
-                                <li>eGBTS/NodeB/eNodeB/gNodeB site deployment, RAT expansion and sector expansion</li>
-                                <li>Field Technician support for implementations and maintenance routines (Battery bank capacity calculations, PSU calculation according to site DC load and external cabinet daisy chain configuration via RS484 serial port)</li>
-                                <li>BSC/RNC interface & CPU resources implementation and maintenance routine (ABIS interface load balancing, according to TRX report and new A & Gb interface integration according to utilization reports)</li>
-                                <li>PTP Server implementation, interface implementation and maintenance routine</li>
-                                <li>Develop & maintain Network Dashboard web app</li>
-                            </ul>
-                            <br>
-                            <strong>Achievements: </strong>
-                            <ul>
-                                <li>NE Name & Type Network Standardization</li>
-                                <li>Successful CS Core Network Migration on RAN Side without Incidents</li>
-                                <li>Cell Site Sector Split Time Improvement from 2hrs to 15mins</li>
-                                <li>eGBTS Rehoming Time Improvement from 1hr to 5mins</li>
-                                <li>Successfully integrate new PTP servers on network and deploy IP Clock Links standardization parameters on the whole network</li>
-                            </ul>
-                        </p>
+                        <strong>College Name: </strong>Pontificia Universidad Católica Madre & Maestra<br>
+                        <strong>Title Obtained: </strong>Master’s Degree on Project Management<br>
+                        <strong>Duration: </strong>August-2012 – April-2014<br>
                     </li>
+                    <br>
                     <li>
-                        <p>
-                            <strong>Employer: </strong>Pontificia Universidad Catolica Madre & Maestra (PUCMM)<br>
-                            <strong>Job Title: </strong>Adjunct Professor<br>
-                            <strong>Duration: </strong>January-2019 – Current <br>
-                            <strong>Job Description: </strong>Adjunct Professor for the telematics engineering school, Telecom Division.<br>
-                            <strong>Duties: </strong>
-                            <ul>
-                                <li>Teach the Telecom Network Architecture subject [ITT-435] and Wireless Access subject [ITT-546]</li>
-                                <li>Periodic updates on the Telecom Network Architecture and Wireless Access subject’s programs</li>
-                                <li>Periodic updates on the School’s program for the Telematics Engineering career</li>
-                            </ul>
-                            <br>
-                            <strong>Achievements: </strong>
-                            <ul>
-                                <li>Update Telecom Network Architecture Subject Program with the Following topics: GSM, UMTS, LTE & NR Network Architecture, IMS on Fixed Networks and FTTH, FTTx & WTTx</li>
-                                <li>Request & Receive Telecom Equipment as donations from multiple local Telecom Companies to be installed on College’s Laboratories</li>
-                                <li>Successfully adapt to imparting classes online</li>
-                            </ul>
-                        </p>
+                        <strong>College Name: </strong>Pontificia Universidad Católica Madre & Maestra<br>
+                        <strong>Title Obtained: </strong>Telecommunication Engineer<br>
+                        <strong>Duration: </strong>August-2005 – July-2010<br>
                     </li>
-                    <li>
-                        <p>
-                            <strong>Employer: </strong>ManPower Dominicana<br>
-                            <strong>Job Title: </strong>Wireless Engineer<br>
-                            <strong>Duration: </strong>August-2016 – June 2019<br>
-                            <strong>Job Description: </strong>Customer engineering support for Huawei Technologies on RAN Swap out and Network Babysitting projects for the 2 biggest mobile service providers on the Dominican Republic.<br>
-                            <strong>Duties: </strong>
-                            <ul>
-                                <li>Single RAN eGBTS/NodeB/eNodeB swap out (from Ericsson BTS, NodeB and Nokia eNodeB to Huawei SingleRAN MBTS)</li>
-                                <li>BSC/RNC network element design & integration (according to customer’s current traffic trends)</li>
-                                <li>Customer’s network babysitting</li>
-                                <li>Customer’s technical training (including field operations engineers, Tier I, II & III operations engineers and integrations and implementation engineers)</li>
-                                <li>Oversee WTTx Project Network Rollout</li>
-                                <li>WTTx Cell Integration</li>
-                                <li>Pico/Macro BTS Integration</li>
-                            </ul>
-                            <br>
-                            <strong>Achievements: </strong>
-                            <ul>
-                                <li>New GUL Site & LTE Sector Expansion Deployment Tool Development on Python and VBA, improving new MBTS integration time from 1hr to 30mins</li>
-                                <li>DHCP Relay deployment on Customer’s network, to reduce site integration cost and simplify delivery process</li>
-                                <li>Parameter standardization on customer’s network to simplify troubleshooting</li>
-                                <li>VoLTE Project support on RAN Side</li>
-                            </ul>
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            <strong>Employer: </strong>Orange Dominicana<br>
-                            <strong>Job Title: </strong>Junior Microwave Transmission Engineer<br>
-                            <strong>Duration: </strong>December 2014 – August 2016<br>
-                            <strong>Job Description: </strong>Part of the Wireless Transport Engineering Team, responsible for the transport layer on new sites, part of the network rollout projects, B2B Customer’s tailor-made solutions for transmission, microwave and optic fiber link dimensioning and maintenance.<br>
-                            <strong>Duties: </strong>
-                            <ul>
-                                <li>Network Rollout Project support (microwave link design, according to the ABIS/IuB/S1 throughput requirements)</li>
-                                <li>Support the field operations engineers on their integration & maintenance tasks</li>
-                                <li>Oversee Microwave Link utilization and coordinate expansion jobs accordingly, to maintain link utilization below 70%</li>
-                            </ul>
-                            <br>
-                            <strong>Achievements: </strong>
-                            <ul>
-                                <li>Maintaining link utilization below 70% on the Eastern Region of the country</li>
-                                <li>Network Rollout microwave link installation according to plan [90% of the cases]</li>
-                                <li>New commissioning tool implementation for Huawei RTN Microwave Links (CLI Interface)</li>
-                                <li>Fixing & maintaining O&M Network for various NEs on Northern and Southern regions of the country (Ericsson Minilink, Huawei RTN910, RTN950 & RTN980, Eclipse/Aviat INU & INUe)</li>
-                            </ul>
-                            <br>
-                            <strong>Job Title: </strong>NOC Tier I Junior Engineer<br>
-                            <strong>Duration: </strong>June 2014 – December 2014<br>
-                            <strong>Job Description: </strong>Part of the Network Operation Center team, responsible for overseeing network alarms & performance, Site access and Field technician support.<br>
-                            <strong>Duties: </strong>
-                            <ul>
-                                <li>Support field technicians on their maintenance routines on Ericsson 2106, 2101 & 2111 GBTS, Huawei NodeB & eNodeB, Ericsson Minilink, Aviat INU & INUe and Huawei RTN microwave links</li>
-                                <li>Receive and process external and internal alarms and assign trouble tickets accordingly</li>
-                            </ul>
-                            <br>
-                            <strong>Job Title: </strong>Tier III Customer Service Support Junior Engineer<br>
-                            <strong>Duration: </strong>June 2012 – June 2014<br>
-                            <strong>Job Description: </strong>Work as part of the team responsible for acting as a bridge between the Customer Service Directive and the Network O&M Directive, to analyze, escalate and follow up on trouble tickets escalated from Tier II in the Customer Service Directive. Support on Major network incidents, by confirming the case has effectively been solved with B2C and B2B customers.<br>
-                            <strong>Duties: </strong>
-                            <ul>
-                                <li>Signaling analysis throughout the network (using Astellia and Tekelek STP)</li>
-                                <li>RAN KPI analysis (On Huawei mAOS & Ericsson OSS) and Trouble Tickets correlation</li>
-                                <li>Customer site visit for a closer follow up [B2B cases only]</li>
-                            </ul>
-                            <br>
-                            <strong>Achievements: </strong>
-                            <ul>
-                                <li>Tier II department technical training on RAN KPI analysis to reduce Trouble Tickets escalation</li>
-                                <li>Field technicians technical training on Huawei BTS3900 NodeB IP transport troubleshooting</li>
-                                <li>Development of the Microwave Link network topology Google Earth layer</li>
-                                <li>Analysis on a Data Consumption bug on Volubill VAS platform</li>
-                            </ul>
-                            <br>
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            <strong>Employer: </strong>ManPower Dominicana<br>
-                            <strong>Job Title: </strong>Site Engineer<br>
-                            <strong>Duration: </strong>March-2011 – July 2012<br>
-                            <strong>Job Description: </strong>Support for customer Huawei Dominicana on UMTS Network Rollout project for one of the biggest mobile service providers on the Dominican Republic. Act as an OnSite Integration Engineer for NodeBs and Site support during warranty after integration.<br>
-                            <strong>Duties: </strong>
-                            <ul>
-                                <li>On site NodeB BTS3900 commissioning and integration</li>
-                                <li>Subcontractor task coordination (Warehouse pickup, site adaptation and installation)</li>
-                                <li>Project planning and reporting</li>
-                                <li>Channel Element expansions</li>
-                            </ul>
-                            <br>
-                            <strong>Achievements: </strong>
-                            <ul>
-                                <li>NodeB BTS3900 integration script development through MML Command & CME Tool</li>
-                                <li>Successfully complete 2011-Q3, 2011-Q4, 2012-Q1 and 2012-Q2 project tasks according to plan</li>
-                            </ul>
-                        </p>
-                    </li>
+                    <br>
                 </ul>
-            </section>
-            <section class="content education">
-                <h1>Education</h1>
-                <p>
-                    <ul>
-                        <li>
-                            <strong>College Name: </strong>Pontificia Universidad Católica Madre & Maestra<br>
-                            <strong>Title Obtained: </strong>Master’s Degree on Project Management<br>
-                            <strong>Duration: </strong>August-2012 – April-2014<br>
-                        </li>
-                        <br>
-                        <li>
-                            <strong>College Name: </strong>Pontificia Universidad Católica Madre & Maestra<br>
-                            <strong>Title Obtained: </strong>Telecommunication Engineer<br>
-                            <strong>Duration: </strong>August-2005 – July-2010<br>
-                        </li>
-                        <br>
-                    </ul>
-                </p>
-            </section>
-            <section class="content skills">
-                <h1>Skills</h1>
-                <p>
-                    <ul>
-                        <li>Self-Learning</li>
-                        <li>Work Under Pressure</li>
-                        <li>Adaptability</li>
-                        <li>Python3</li>
-                        <li>CSS3</li>
-                        <li>HTML5</li>
-                        <li>JavaScript</li>
-                        <li>Node.JS</li>
-                        <li>Huawei MML Interface</li>
-                    </ul>
-                </p>
-            </section>
-            <section class="content portfolio">
-                <p>Section under development!</p>
-                <a href="./model1.html"><button>Model #1</button></a>
-            </section>
+            </p>
+        </section>
+        <section class="showButton">
+            <button type="button" onclick="showInfoBox('skills')">Skills</button>
+        </section>
+        <section class="content skills">
+            <h1>Skills</h1>
+            <p>
+                <ul>
+                    <li>Self-Learning</li>
+                    <li>Work Under Pressure</li>
+                    <li>Adaptability</li>
+                    <li>Python3</li>
+                    <li>CSS3</li>
+                    <li>HTML5</li>
+                    <li>JavaScript</li>
+                    <li>Node.JS</li>
+                    <li>Huawei MML Interface</li>
+                </ul>
+            </p>
+        </section>
+        <section class="bottomMenu">
+            <a href="./model1.html"><button>Model #1</button></a>
         </section>
     </body>
 </html>
