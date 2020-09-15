@@ -106,7 +106,7 @@ header div {
     display: none;
 }
 
-@media (orientation:potrait) {
+@media (orientation:portrait) {
     header div {
         flex-wrap: wrap;
         height: auto;
