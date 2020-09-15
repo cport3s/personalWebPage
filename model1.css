@@ -16,6 +16,7 @@
 body {
     background-color: rgb(0, 103, 151);
     font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
 header {
@@ -105,3 +106,13 @@ header div {
     display: none;
 }
 
+@media (orientation:potrait) {
+    header div {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .personal_information article {
+        display: inline;
+    }
+}
