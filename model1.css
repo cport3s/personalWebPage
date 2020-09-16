@@ -108,11 +108,16 @@ header div {
 
 @media (orientation:portrait) {
     header div {
-        flex-wrap: wrap;
+        flex-direction: column;
         height: auto;
+        align-items: center;
     }
 
     .personal_information article {
         display: inline;
+    }
+
+    .personal_information article div {
+        width: 100%;
     }
 }
